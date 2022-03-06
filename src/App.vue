@@ -373,7 +373,7 @@ export default {
             class="text-yellow-500 italic hover:text-yellow-300 cursor-pointer"
             @click="firstCode"
             >"The Sum of"</a
-          >. when I was in college I shift my interest to game development and
+          >. When I was in college I shift my interest to game development and
           embedded systems (raspberry pi, arduino).
         </p>
 
