@@ -157,6 +157,10 @@ export default {
         src: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
         alt: "arduino",
       },
+      {
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original-wordmark.svg",
+        alt: "unity",
+      },
     ]);
     function firstCode() {
       // accept 2 integer then sum them
@@ -229,7 +233,7 @@ export default {
             >
               Hello there
               <!-- <div class="animate-wiggle">👋</div> -->
-              , Im
+              , I'm
             </h2>
             <h2
               class="text-3xl lg:text-4xl sm:text-5xl font-semibold text-white sm:tracking-tight"
@@ -381,9 +385,7 @@ export default {
         </p>
       </div>
       <div class="my-auto z-[10]">
-        <div
-          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 bg-white lg:bg-transparent"
-        >
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
               <h2 class="text-3xl font-extrabold text-gray-300 sm:text-4xl">
@@ -392,51 +394,24 @@ export default {
               <p class="mt-3 max-w-3xl text-lg text-gray-400">
                 I am a self taught developer and I have a strong interest in any
                 kind of programming language. I have experience with HTML, CSS,
-                Javascript, PHP, C, C#, SQL, Arduino and many more. I have
-                experience working with the following languages and frameworks.
-                Specially laravel and vue.js. which i have been using for the
-                past few years.
+                Javascript, PHP, C, C#, SQL, Arduino and many more. Specially
+                laravel and vue.js. which i have been using for the past few
+                years.
               </p>
-              <p class="mt-3 max-w-3xl text-lg text-gray-400">
-                I have also experience on working with Internet of Things (IOT)
-                devices. Connecting iot devices to web applications. Live car
-                GPS tracker and monitoring.
-                <img
-                  class="w-60"
-                  src="./assets/gpstracking.png"
-                  alt="Live Gps tracking"
-                />
-              </p>
+              <p class="mt-3 max-w-3xl text-lg text-gray-400"></p>
             </div>
 
             <div
-              class="mt-8 z-[10] p-3 shadow-lg rounded-lg grid grid-cols-3 gap-0 md:grid-cols-4 lg:mt-0 lg:grid-cols-5 bg-white"
+              class="mt-8 z-[10] p-3 shadow-lg rounded-lg grid grid-cols-2 sm:grid-cols-4 bg-white"
             >
               <template v-for="stack in stacks" :key="stack.alt">
-                <div v-if="stack.type == 'spacer'" class="col-span-5">
-                  <div class="relative py-2">
-                    <div
-                      class="absolute inset-0 flex items-center"
-                      aria-hidden="true"
-                    >
-                      <div class="w-full border-t border-gray-300"></div>
-                    </div>
-                    <div class="relative flex justify-center">
-                      <span
-                        v-html="stack.text"
-                        class="px-2 bg-white text-lg text-gray-700 font-semibold"
-                      >
-                      </span>
-                    </div>
-                  </div>
-                </div>
                 <a
                   :href="stack.link"
                   target="_stack"
-                  v-else
-                  class="col-span-1 flex border justify-center p-6 bg-gray-50"
+                  v-if="stack.type != 'spacer'"
+                  class="flex-0 flex justify-center p-6"
                 >
-                  <img class="max-h-12" :src="stack.src" :alt="stack.alt" />
+                  <img class="h-12" :src="stack.src" :alt="stack.alt" />
                 </a>
               </template>
             </div>
