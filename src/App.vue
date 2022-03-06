@@ -363,7 +363,7 @@ export default {
           <a class="text-yellow-600" href="https://www.tigergraphics.com.ph"
             >Tigergraphics</a
           >
-          as a Software Developer but also serving as I.T support.
+          as a Software Developer but also serving as an I.T support.
         </p>
         <p class="aboutme">
           I started to get into programming when I was in 2nd year high school
