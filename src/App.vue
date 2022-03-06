@@ -1,6 +1,7 @@
 <script>
 import { ref } from "vue";
 import { Switch } from "@headlessui/vue";
+import img from "./assets/88959118_2948458481878646_7262408940095275008_n.jpg";
 export default {
   components: {
     Switch,
