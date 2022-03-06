@@ -189,7 +189,7 @@ export default {
 <template>
   <div :class="{ dark: darkMode }">
     <div class="relative dark:bg-gray-800">
-      <div class="absolute top-5 left-5">
+      <div class="absolute top-5 left-5 hidden">
         <!-- create button for toogling dark mode , moon icon-->
         <button v-if="darkMode" @click="darkMode = false" class="text-white">
           <svg
