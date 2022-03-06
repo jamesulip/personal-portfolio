@@ -367,13 +367,13 @@ export default {
         </p>
         <p class="aboutme">
           I started to get into programming when I was in 2nd year high school
-          back in 2009. I was amazed by the first code i wrote in HTML and
-          javascript the called
+          back in 2009. I was amazed by the first code I wrote in HTML and
+          javascript called
           <a
             class="text-yellow-500 italic hover:text-yellow-300 cursor-pointer"
             @click="firstCode"
             >"The Sum of"</a
-          >. when i was in college i shift my interest to game development and
+          >. when I was in college I shift my interest to game development and
           embedded systems (raspberry pi, arduino).
         </p>
 
@@ -396,7 +396,7 @@ export default {
                 I am a self taught developer and I have a strong interest in any
                 kind of programming language. I have experience with HTML, CSS,
                 Javascript, PHP, C, C#, SQL, Arduino and many more. Specially
-                laravel and vue.js. which i have been using for the past few
+                laravel and vue.js. which I have been using for the past few
                 years.
               </p>
               <p class="mt-3 max-w-3xl text-lg text-gray-400"></p>
