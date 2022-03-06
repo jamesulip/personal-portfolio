@@ -373,16 +373,15 @@ export default {
             class="text-yellow-500 italic hover:text-yellow-300 cursor-pointer"
             @click="firstCode"
             >"The Sum of"</a
-          >. When I was in college I shift my interest to game development and
+          >. When I was in college I shifted my interest to game development and
           embedded systems (raspberry pi, arduino).
         </p>
 
         <p class="aboutme">
           I have a B.S. in Computer Science from the
-          <a class="" href="http://"
-            >University of AMA University and Colleges</a
-          >. I enjoy working on projects that are both challenging and fun. I'm
-          always looking to learn new things and improve my skills.
+          <a class="" href="http://">AMA University and Colleges</a>. I enjoy
+          working on projects that are both challenging and fun. I'm always
+          looking to learn new things and improve my skills.
         </p>
       </div>
       <div class="my-auto z-[10]">
