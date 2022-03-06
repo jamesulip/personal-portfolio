@@ -236,6 +236,11 @@ export default {
             >
               James Santos Ulip
             </h2>
+            <h2
+              class="text-1xl lg:text-2xl sm:text-3 font-semibold text-white sm:tracking-tight"
+            >
+              Fullstack Developer
+            </h2>
             <div class="mt-5 flex gap-x-2">
               <a
                 target="_blank"
@@ -303,8 +308,7 @@ export default {
         <div></div>
       </div>
       <div class="w-full grid absolute bottom-5">
-        <div class="mx-auto">
-          <!-- arrow down button pointing down -->
+        <!-- <div class="mx-auto">
           <button @click="enabled = !enabled" class="text-white flex text-2xl">
             <div class="flex">
               <svg
@@ -324,11 +328,11 @@ export default {
             </div>
             <div class="text-lg">ABOUT ME</div>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <div class="max-h-[70vh] relative grid bg-gray-500">
+    <div class="relative grid bg-gray-500">
       <div class="absolute inset-0">
         <!-- <img
           class="w-full h-full object-cover"
@@ -382,10 +386,10 @@ export default {
         >
           <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
-              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              <h2 class="text-3xl font-extrabold text-gray-300 sm:text-4xl">
                 Languages and Tools
               </h2>
-              <p class="mt-3 max-w-3xl text-lg text-gray-800">
+              <p class="mt-3 max-w-3xl text-lg text-gray-400">
                 I am a self taught developer and I have a strong interest in any
                 kind of programming language. I have experience with HTML, CSS,
                 Javascript, PHP, C, C#, SQL, Arduino and many more. I have
@@ -393,7 +397,7 @@ export default {
                 Specially laravel and vue.js. which i have been using for the
                 past few years.
               </p>
-              <p class="mt-3 max-w-3xl text-lg text-gray-800">
+              <p class="mt-3 max-w-3xl text-lg text-gray-400">
                 I have also experience on working with Internet of Things (IOT)
                 devices. Connecting iot devices to web applications. Live car
                 GPS tracker and monitoring.
@@ -448,5 +452,20 @@ export default {
 <style>
 .aboutme {
   @apply mt-6 max-w-3xl text-xl text-gray-300;
+}
+.stack::before {
+  content: "Backend";
+  animation: animate infinite 1s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  0% {
+    content: "Backend";
+  }
+
+  50% {
+    content: "Software";
+  }
 }
 </style>
