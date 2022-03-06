@@ -146,6 +146,14 @@ export default {
         alt: "docker",
       },
       {
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        alt: "aws",
+      },
+      {
+        alt: "Digital Ocean",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/digitalocean/digitalocean-original-wordmark.svg",
+      },
+      {
         src: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
         alt: "arduino",
       },
@@ -320,7 +328,7 @@ export default {
       </div>
     </div>
 
-    <div class="max-h-[60vh] relative grid bg-gray-500">
+    <div class="max-h-[70vh] relative grid bg-gray-500">
       <div class="absolute inset-0">
         <!-- <img
           class="w-full h-full object-cover"
@@ -340,7 +348,7 @@ export default {
         >
           About Me
         </h1>
-        <p class="mt-6 max-w-3xl text-xl text-gray-300">
+        <p class="aboutme">
           I'm a full-stack web developer with a passion for developing and
           designing. I'm currently working at
           <a class="text-yellow-600" href="https://www.tigergraphics.com.ph"
@@ -348,7 +356,7 @@ export default {
           >
           as a Software Developer but also serving as I.T support.
         </p>
-        <p class="mt-6 max-w-3xl text-xl text-gray-300">
+        <p class="aboutme">
           I started to get into programming when I was in 2nd year high school
           back in 2009. I was amazed by the first code i wrote in HTML and
           javascript the called
@@ -360,7 +368,7 @@ export default {
           embedded systems (raspberry pi, arduino).
         </p>
 
-        <p class="mt-6 max-w-3xl text-xl text-gray-300">
+        <p class="aboutme">
           I have a B.S. in Computer Science from the
           <a class="" href="http://"
             >University of AMA University and Colleges</a
@@ -369,30 +377,39 @@ export default {
         </p>
       </div>
       <div class="my-auto z-[10]">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div
+          class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 bg-white lg:bg-transparent"
+        >
           <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
               <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 Languages and Tools
               </h2>
               <p class="mt-3 max-w-3xl text-lg text-gray-800">
-                I have experience working with the following languages and
-                tools. Specially laravel and vue.js. I also have experience
-                working with the following frameworks and libraries listed.
+                I am a self taught developer and I have a strong interest in any
+                kind of programming language. I have experience with HTML, CSS,
+                Javascript, PHP, C, C#, SQL, Arduino and many more. I have
+                experience working with the following languages and frameworks.
+                Specially laravel and vue.js. which i have been using for the
+                past few years.
               </p>
               <p class="mt-3 max-w-3xl text-lg text-gray-800">
-                I have also with experience working with Internet of Things
-                (IOT) devices. Connecting iot devices to web applications. Live
-                Car GPS tracker and monitoring.
-                <img class="w-60" src="./assets/gpstracking.png" alt="IOT" />
+                I have also experience on working with Internet of Things (IOT)
+                devices. Connecting iot devices to web applications. Live car
+                GPS tracker and monitoring.
+                <img
+                  class="w-60"
+                  src="./assets/gpstracking.png"
+                  alt="Live Gps tracking"
+                />
               </p>
             </div>
 
             <div
-              class="mt-8 z-[10] grid grid-cols-2 gap-0 md:grid-cols-3 lg:mt-0 lg:grid-cols-4 bg-white"
+              class="mt-8 z-[10] p-3 shadow-lg rounded-lg grid grid-cols-3 gap-0 md:grid-cols-4 lg:mt-0 lg:grid-cols-5 bg-white"
             >
               <template v-for="stack in stacks" :key="stack.alt">
-                <div v-if="stack.type == 'spacer'" class="col-span-4">
+                <div v-if="stack.type == 'spacer'" class="col-span-5">
                   <div class="relative py-2">
                     <div
                       class="absolute inset-0 flex items-center"
@@ -403,7 +420,7 @@ export default {
                     <div class="relative flex justify-center">
                       <span
                         v-html="stack.text"
-                        class="px-2 bg-white text-sm text-gray-500"
+                        class="px-2 bg-white text-lg text-gray-700 font-semibold"
                       >
                       </span>
                     </div>
@@ -422,6 +439,14 @@ export default {
           </div>
         </div>
       </div>
+      <div class="fixed top-0 right-0 p-3">
+        <div class="mx-auto text-white">WIP</div>
+      </div>
     </div>
   </div>
 </template>
+<style>
+.aboutme {
+  @apply mt-6 max-w-3xl text-xl text-gray-300;
+}
+</style>
