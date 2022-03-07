@@ -2,8 +2,6 @@
   import {
     ref,onMounted
   } from "vue";
-
-  import img from "./assets/88959118_2948458481878646_7262408940095275008_n.jpg";
   import AOS from "aos";
   export default {
 
