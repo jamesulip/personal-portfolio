@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp src/assets/google4c666e33d3ec79bb.html dist/  && cp src/assets/BingSiteAuth.xml dist/",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
